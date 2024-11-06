@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D818F7A-7729-459E-BDFA-CB9CD16864A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Trace_Quest</RootNamespace>
+    <AssemblyName>Trace Quest</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormColors.cs" />
+    <Compile Include="MainMenuGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuGUI.Designer.cs">
+      <DependentUpon>MainMenuGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainCaller.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quest01Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest01Form.Designer.cs">
+      <DependentUpon>Quest01Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quest03Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest03Form.Designer.cs">
+      <DependentUpon>Quest03Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quest02Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest02Form.Designer.cs">
+      <DependentUpon>Quest02Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainMenuGUI.resx">
+      <DependentUpon>MainMenuGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Quest01Form.resx">
+      <DependentUpon>Quest01Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quest02Form.resx">
+      <DependentUpon>Quest02Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quest03Form.resx">
+      <DependentUpon>Quest03Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TraceQuestLogo x4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TraceQuestLogo x5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TraceQuestLogo x10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TraceQuestLogo x7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quest x5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quest x7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AcceptButton x8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AcceptButton x4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wooden Wall x4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wooden Wall x8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wooden Wall Dark x8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wooden Wall Dark Wide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dungeon wall 128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dungeon wall 256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dungeon wall Dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wanted Thief Quest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Demon Hunting Quest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Textbox Skin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Textbox Skin 128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Textbox Skin 256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Textbox Skin 192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Answer Poster 256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Answer Poster 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GO Button 128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Answer Poster 192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Answer Poster 640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vertical Answer Poster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sandstone Wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Archaeology Quest.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

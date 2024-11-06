@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trace Quest", "Trace Quest\Trace Quest.csproj", "{1D818F7A-7729-459E-BDFA-CB9CD16864A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D818F7A-7729-459E-BDFA-CB9CD16864A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D818F7A-7729-459E-BDFA-CB9CD16864A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D818F7A-7729-459E-BDFA-CB9CD16864A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D818F7A-7729-459E-BDFA-CB9CD16864A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5371171-B406-4B84-BB13-D8B41FDB74E8}
+	EndGlobalSection
+EndGlobal
