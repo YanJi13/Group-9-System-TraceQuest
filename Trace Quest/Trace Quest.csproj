@@ -215,5 +215,20 @@
   <ItemGroup>
     <None Include="Resources\Archaeology Quest.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Demon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Demon 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Demon 256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RobinDabank 288.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dialogue Box.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

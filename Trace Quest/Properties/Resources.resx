@@ -127,8 +127,11 @@
   <data name="TraceQuestLogo x10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TraceQuestLogo x10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Textbox Skin 192" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Textbox Skin 192.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Demon 256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Demon 256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RobinDabank 288" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RobinDabank 288.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Wooden Wall x8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wooden Wall x8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,8 +139,8 @@
   <data name="GO Button 128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GO Button 128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Textbox Skin 128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Textbox Skin 128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Archaeology Quest2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Archaeology Quest1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Demon Hunting Quest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Demon Hunting Quest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,11 +160,11 @@
   <data name="Answer Poster 256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Answer Poster 256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Textbox Skin 128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Textbox Skin 128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TraceQuestLogo x5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TraceQuestLogo x5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Wanted Thief Quest" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Wanted Thief Quest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Quest x7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Quest x7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,11 +172,17 @@
   <data name="Wooden Wall x4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wooden Wall x4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Demon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Demon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Dungeon wall Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dungeon wall Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dungeon wall 256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dungeon wall 256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Demon 512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Demon 512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Archaeology Quest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Archaeology Quest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,6 +196,9 @@
   <data name="AcceptButton x8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AcceptButton x8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Archaeology Quest1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Archaeology Quest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Vertical Answer Poster" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vertical Answer Poster.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,11 +211,14 @@
   <data name="AcceptButton x4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AcceptButton x4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Archaeology Quest1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Archaeology Quest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Textbox Skin 192" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Textbox Skin 192.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sandstone Wall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sandstone Wall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wanted Thief Quest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wanted Thief Quest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dungeon wall 128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dungeon wall 128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,7 +226,7 @@
   <data name="Answer Poster 192" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Answer Poster 192.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Archaeology Quest2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Archaeology Quest1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Dialogue Box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dialogue Box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

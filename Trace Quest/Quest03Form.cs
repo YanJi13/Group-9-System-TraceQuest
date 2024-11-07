@@ -14,12 +14,14 @@ namespace Trace_Quest {
     public partial class Quest03Form : Form {
 
         private DBConnection dbConnection;
+        private MainMenuGUI mainMenuGUI;
         private const int quest03Reward = 500; // this is the gold reward u get from quest 3
 
-        public Quest03Form() {
+        public Quest03Form(MainMenuGUI mainMenu) {
 
             InitializeComponent();
             dbConnection = new DBConnection();
+            mainMenuGUI = mainMenu;
         }
 
         private void ct03AnswerButton_Click(object sender, EventArgs e) {
@@ -40,8 +42,8 @@ namespace Trace_Quest {
                         comm.Parameters.AddWithValue("@quest03Reward", quest03Reward);
                         comm.ExecuteNonQuery();
                     }
-                }
-                else {
+                    mainMenuGUI.GetTotalGold();
+                } else {
 
                     MessageBox.Show("Your mind is broken! Robin Dabank gets away!");
                     codeTracing03TextBox.Clear();

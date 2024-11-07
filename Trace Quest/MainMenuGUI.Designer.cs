@@ -247,11 +247,11 @@ namespace Trace_Quest {
             this.totalGoldLabel.AutoSize = true;
             this.totalGoldLabel.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalGoldLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.totalGoldLabel.Location = new System.Drawing.Point(946, 34);
+            this.totalGoldLabel.Location = new System.Drawing.Point(12, 21);
             this.totalGoldLabel.Name = "totalGoldLabel";
-            this.totalGoldLabel.Size = new System.Drawing.Size(0, 24);
+            this.totalGoldLabel.Size = new System.Drawing.Size(64, 24);
             this.totalGoldLabel.TabIndex = 13;
-            this.totalGoldLabel.Text = totalGoldDisplay;
+            this.totalGoldLabel.Text = "Gold: ";
             // 
             // MainMenuGUI
             // 
@@ -265,6 +265,7 @@ namespace Trace_Quest {
             this.MaximizeBox = false;
             this.Name = "MainMenuGUI";
             this.Text = "Trace Quest";
+            this.Shown += new System.EventHandler(this.MainMenuGUI_Shown);
             this.mainMenuLogoPanel.ResumeLayout(false);
             this.mainMenuLogoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainMenuLogo)).EndInit();

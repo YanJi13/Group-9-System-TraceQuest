@@ -13,12 +13,14 @@ namespace Trace_Quest {
     public partial class Quest01Form : Form {
 
         private DBConnection dbConnection;
+        private MainMenuGUI mainMenuGUI;
         private const int quest01Reward = 900; // this is the gold reward u get from quest 1
 
-        public Quest01Form() {
+        public Quest01Form(MainMenuGUI mainMenu) {
 
             InitializeComponent();
             dbConnection = new DBConnection();
+            mainMenuGUI = mainMenu;
         }
 
         public string findTrueName() {
@@ -59,6 +61,7 @@ namespace Trace_Quest {
                     comm.Parameters.AddWithValue("@quest01Reward", quest01Reward);
                     comm.ExecuteNonQuery();
                 }
+                mainMenuGUI.GetTotalGold();
 
             } else {
 

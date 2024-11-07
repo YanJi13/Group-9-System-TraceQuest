@@ -28,9 +28,14 @@
             this.codeTracing01 = new System.Windows.Forms.PictureBox();
             this.codeTracing01TextBox = new System.Windows.Forms.TextBox();
             this.ct01AnswerButton = new System.Windows.Forms.Button();
+            this.demon = new System.Windows.Forms.PictureBox();
+            this.demonDialogueBox = new System.Windows.Forms.PictureBox();
+            this.demonDialogue = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ct01AnswerField)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textbox01Skin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.codeTracing01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demonDialogueBox)).BeginInit();
             this.SuspendLayout();
             // 
             // ct01AnswerField
@@ -92,12 +97,50 @@
             this.ct01AnswerButton.UseVisualStyleBackColor = false;
             this.ct01AnswerButton.Click += new System.EventHandler(this.ct01AnswerButton_Click);
             // 
+            // demon
+            // 
+            this.demon.BackColor = System.Drawing.Color.Transparent;
+            this.demon.Image = global::Trace_Quest.Properties.Resources.Demon_256;
+            this.demon.Location = new System.Drawing.Point(409, 81);
+            this.demon.Name = "demon";
+            this.demon.Size = new System.Drawing.Size(256, 256);
+            this.demon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.demon.TabIndex = 5;
+            this.demon.TabStop = false;
+            // 
+            // demonDialogueBox
+            // 
+            this.demonDialogueBox.BackColor = System.Drawing.Color.Transparent;
+            this.demonDialogueBox.Image = global::Trace_Quest.Properties.Resources.Dialogue_Box;
+            this.demonDialogueBox.Location = new System.Drawing.Point(127, -3);
+            this.demonDialogueBox.Name = "demonDialogueBox";
+            this.demonDialogueBox.Size = new System.Drawing.Size(256, 256);
+            this.demonDialogueBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.demonDialogueBox.TabIndex = 6;
+            this.demonDialogueBox.TabStop = false;
+            // 
+            // demonDialogue
+            // 
+            this.demonDialogue.AutoSize = true;
+            this.demonDialogue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(233)))), ((int)(((byte)(210)))));
+            this.demonDialogue.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.demonDialogue.Location = new System.Drawing.Point(152, 84);
+            this.demonDialogue.Name = "demonDialogue";
+            this.demonDialogue.Size = new System.Drawing.Size(201, 80);
+            this.demonDialogue.TabIndex = 7;
+            this.demonDialogue.Text = "YOU CANT STOP ME FROM\r\nTROLLING, ADVENTURER!\r\nDO YOU EVEN KNOW WHAT\r\nA FOR LOOP I" +
+    "S??";
+            this.demonDialogue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Quest01Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Trace_Quest.Properties.Resources.Dungeon_wall_Dark1;
             this.ClientSize = new System.Drawing.Size(814, 701);
+            this.Controls.Add(this.demonDialogue);
+            this.Controls.Add(this.demonDialogueBox);
+            this.Controls.Add(this.demon);
             this.Controls.Add(this.ct01AnswerButton);
             this.Controls.Add(this.codeTracing01TextBox);
             this.Controls.Add(this.codeTracing01);
@@ -110,6 +153,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ct01AnswerField)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textbox01Skin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.codeTracing01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.demonDialogueBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,5 +167,8 @@
         private System.Windows.Forms.PictureBox codeTracing01;
         private System.Windows.Forms.TextBox codeTracing01TextBox;
         private System.Windows.Forms.Button ct01AnswerButton;
+        private System.Windows.Forms.PictureBox demon;
+        private System.Windows.Forms.PictureBox demonDialogueBox;
+        private System.Windows.Forms.Label demonDialogue;
     }
 }

@@ -28,9 +28,14 @@
             this.textbox03Skin = new System.Windows.Forms.PictureBox();
             this.ct03AnswerField = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.robinDabankDialogue = new System.Windows.Forms.Label();
+            this.robinDabankDialogueBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.textbox03Skin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ct03AnswerField)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.robinDabankDialogueBox)).BeginInit();
             this.SuspendLayout();
             // 
             // codeTracing03TextBox
@@ -84,12 +89,46 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Trace_Quest.Properties.Resources.Wanted_Thief_Quest;
-            this.pictureBox1.Location = new System.Drawing.Point(41, 56);
+            this.pictureBox1.Location = new System.Drawing.Point(30, 56);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(319, 617);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Trace_Quest.Properties.Resources.RobinDabank_288;
+            this.pictureBox2.Location = new System.Drawing.Point(627, 117);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(288, 256);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            // 
+            // robinDabankDialogue
+            // 
+            this.robinDabankDialogue.AutoSize = true;
+            this.robinDabankDialogue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(233)))), ((int)(((byte)(210)))));
+            this.robinDabankDialogue.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.robinDabankDialogue.Location = new System.Drawing.Point(392, 84);
+            this.robinDabankDialogue.Name = "robinDabankDialogue";
+            this.robinDabankDialogue.Size = new System.Drawing.Size(214, 60);
+            this.robinDabankDialogue.TabIndex = 16;
+            this.robinDabankDialogue.Text = "YOU CANT CATCH ME, IDIOT!\r\n\r\nI CAST MINDBREAKER!!";
+            this.robinDabankDialogue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // robinDabankDialogueBox
+            // 
+            this.robinDabankDialogueBox.BackColor = System.Drawing.Color.Transparent;
+            this.robinDabankDialogueBox.Image = global::Trace_Quest.Properties.Resources.Dialogue_Box;
+            this.robinDabankDialogueBox.Location = new System.Drawing.Point(367, -10);
+            this.robinDabankDialogueBox.Name = "robinDabankDialogueBox";
+            this.robinDabankDialogueBox.Size = new System.Drawing.Size(256, 256);
+            this.robinDabankDialogueBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.robinDabankDialogueBox.TabIndex = 15;
+            this.robinDabankDialogueBox.TabStop = false;
             // 
             // Quest03Form
             // 
@@ -97,7 +136,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.BackgroundImage = global::Trace_Quest.Properties.Resources.Dungeon_wall_Dark;
-            this.ClientSize = new System.Drawing.Size(814, 701);
+            this.ClientSize = new System.Drawing.Size(924, 701);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.robinDabankDialogue);
+            this.Controls.Add(this.robinDabankDialogueBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ct03AnswerButton);
             this.Controls.Add(this.codeTracing03TextBox);
@@ -110,6 +152,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textbox03Skin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ct03AnswerField)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.robinDabankDialogueBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,5 +166,8 @@
         private System.Windows.Forms.PictureBox textbox03Skin;
         private System.Windows.Forms.PictureBox ct03AnswerField;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label robinDabankDialogue;
+        private System.Windows.Forms.PictureBox robinDabankDialogueBox;
     }
 }

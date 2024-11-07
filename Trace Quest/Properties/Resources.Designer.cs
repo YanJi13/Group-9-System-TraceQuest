@@ -153,9 +153,49 @@ namespace Trace_Quest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Demon {
+            get {
+                object obj = ResourceManager.GetObject("Demon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Demon_256 {
+            get {
+                object obj = ResourceManager.GetObject("Demon 256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Demon_512 {
+            get {
+                object obj = ResourceManager.GetObject("Demon 512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Demon_Hunting_Quest {
             get {
                 object obj = ResourceManager.GetObject("Demon Hunting Quest", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dialogue_Box {
+            get {
+                object obj = ResourceManager.GetObject("Dialogue Box", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +266,16 @@ namespace Trace_Quest.Properties {
         internal static System.Drawing.Bitmap Quest_x7 {
             get {
                 object obj = ResourceManager.GetObject("Quest x7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RobinDabank_288 {
+            get {
+                object obj = ResourceManager.GetObject("RobinDabank 288", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
