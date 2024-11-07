@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,8 +13,13 @@ using System.Windows.Forms;
 namespace Trace_Quest {
     public partial class Quest02Form : Form {
 
+        private DBConnection dbConnection;
+        private const int quest02Reward = 100; // this is the gold reward u get from quest 2
+
         public Quest02Form() {
+
             InitializeComponent();
+            dbConnection = new DBConnection();
         }
 
         private void ct02AnswerButton_Click(object sender, EventArgs e) {
@@ -26,6 +33,15 @@ namespace Trace_Quest {
 
                     MessageBox.Show("You have successfully solved the riddle!");
                     codeTracing02TextBox.Clear();
+
+                    using (SqlConnection conn = dbConnection.connection) {
+
+                        conn.Open();
+                        SqlCommand comm = new SqlCommand("insert into GoldCollectedTable (Gold_Collected) values (@quest02Reward)", conn);
+                        comm.Parameters.AddWithValue("@quest02Reward", quest02Reward);
+                        comm.ExecuteNonQuery();
+                    }
+
                 } else {
 
                     MessageBox.Show("Wrong answer!");

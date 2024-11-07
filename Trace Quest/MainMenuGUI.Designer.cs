@@ -40,6 +40,7 @@ namespace Trace_Quest {
             this.questPoster02Label = new System.Windows.Forms.Label();
             this.questPoster03Label = new System.Windows.Forms.Label();
             this.mainGUIParentPanel = new System.Windows.Forms.Panel();
+            this.totalGoldLabel = new System.Windows.Forms.Label();
             this.mainMenuLogoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainMenuLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.questPoster03)).BeginInit();
@@ -224,6 +225,7 @@ namespace Trace_Quest {
             // mainGUIParentPanel
             // 
             this.mainGUIParentPanel.BackColor = System.Drawing.Color.Transparent;
+            this.mainGUIParentPanel.Controls.Add(this.totalGoldLabel);
             this.mainGUIParentPanel.Controls.Add(this.questPoster03Label);
             this.mainGUIParentPanel.Controls.Add(this.questPoster02Label);
             this.mainGUIParentPanel.Controls.Add(this.questPoster01Label);
@@ -239,6 +241,17 @@ namespace Trace_Quest {
             this.mainGUIParentPanel.Name = "mainGUIParentPanel";
             this.mainGUIParentPanel.Size = new System.Drawing.Size(1084, 701);
             this.mainGUIParentPanel.TabIndex = 12;
+            // 
+            // totalGoldLabel
+            // 
+            this.totalGoldLabel.AutoSize = true;
+            this.totalGoldLabel.Font = new System.Drawing.Font("Trebuchet MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalGoldLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.totalGoldLabel.Location = new System.Drawing.Point(946, 34);
+            this.totalGoldLabel.Name = "totalGoldLabel";
+            this.totalGoldLabel.Size = new System.Drawing.Size(0, 24);
+            this.totalGoldLabel.TabIndex = 13;
+            this.totalGoldLabel.Text = totalGoldDisplay;
             // 
             // MainMenuGUI
             // 
@@ -281,6 +294,7 @@ namespace Trace_Quest {
         private System.Windows.Forms.Label questPoster02Label;
         private System.Windows.Forms.Label questPoster03Label;
         private System.Windows.Forms.Panel mainGUIParentPanel;
+        private System.Windows.Forms.Label totalGoldLabel;
     }
 }
 

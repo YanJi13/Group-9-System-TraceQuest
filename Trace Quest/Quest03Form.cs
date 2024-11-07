@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,9 +13,13 @@ using System.Windows.Forms;
 namespace Trace_Quest {
     public partial class Quest03Form : Form {
 
+        private DBConnection dbConnection;
+        private const int quest03Reward = 500; // this is the gold reward u get from quest 3
 
         public Quest03Form() {
+
             InitializeComponent();
+            dbConnection = new DBConnection();
         }
 
         private void ct03AnswerButton_Click(object sender, EventArgs e) {
@@ -27,6 +33,13 @@ namespace Trace_Quest {
 
                     MessageBox.Show("You resist the spell and finally put Robin Dabank to justice!");
                     codeTracing03TextBox.Clear();
+                    using (SqlConnection conn = dbConnection.connection) {
+
+                        conn.Open();
+                        SqlCommand comm = new SqlCommand("insert into GoldCollectedTable (Gold_Collected) values (@quest03Reward)", conn);
+                        comm.Parameters.AddWithValue("@quest03Reward", quest03Reward);
+                        comm.ExecuteNonQuery();
+                    }
                 }
                 else {
 
