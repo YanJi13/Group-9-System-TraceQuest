@@ -243,6 +243,16 @@ namespace Trace_Quest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ghost_256 {
+            get {
+                object obj = ResourceManager.GetObject("Ghost 256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GO_Button_128 {
             get {
                 object obj = ResourceManager.GetObject("GO Button 128", resourceCulture);

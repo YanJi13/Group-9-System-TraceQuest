@@ -28,9 +28,14 @@
             this.textbox02Skin = new System.Windows.Forms.PictureBox();
             this.ct02AnswerField = new System.Windows.Forms.PictureBox();
             this.codeTracing02 = new System.Windows.Forms.PictureBox();
+            this.ghost = new System.Windows.Forms.PictureBox();
+            this.ghostDialogueBox = new System.Windows.Forms.PictureBox();
+            this.ghostDialogue = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.textbox02Skin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ct02AnswerField)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.codeTracing02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostDialogueBox)).BeginInit();
             this.SuspendLayout();
             // 
             // ct02AnswerButton
@@ -92,12 +97,50 @@
             this.codeTracing02.TabIndex = 9;
             this.codeTracing02.TabStop = false;
             // 
+            // ghost
+            // 
+            this.ghost.BackColor = System.Drawing.Color.Transparent;
+            this.ghost.Image = global::Trace_Quest.Properties.Resources.Ghost_256;
+            this.ghost.Location = new System.Drawing.Point(391, 135);
+            this.ghost.Name = "ghost";
+            this.ghost.Size = new System.Drawing.Size(256, 256);
+            this.ghost.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ghost.TabIndex = 10;
+            this.ghost.TabStop = false;
+            // 
+            // ghostDialogueBox
+            // 
+            this.ghostDialogueBox.BackColor = System.Drawing.Color.Transparent;
+            this.ghostDialogueBox.Image = global::Trace_Quest.Properties.Resources.Dialogue_Box;
+            this.ghostDialogueBox.Location = new System.Drawing.Point(166, 3);
+            this.ghostDialogueBox.Name = "ghostDialogueBox";
+            this.ghostDialogueBox.Size = new System.Drawing.Size(256, 256);
+            this.ghostDialogueBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ghostDialogueBox.TabIndex = 11;
+            this.ghostDialogueBox.TabStop = false;
+            // 
+            // ghostDialogue
+            // 
+            this.ghostDialogue.AutoSize = true;
+            this.ghostDialogue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(233)))), ((int)(((byte)(210)))));
+            this.ghostDialogue.Font = new System.Drawing.Font("Trebuchet MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ghostDialogue.Location = new System.Drawing.Point(193, 101);
+            this.ghostDialogue.Name = "ghostDialogue";
+            this.ghostDialogue.Size = new System.Drawing.Size(203, 60);
+            this.ghostDialogue.TabIndex = 12;
+            this.ghostDialogue.Text = "Ugh fine! Ill give you a hint\r\n\r\nJUST KIDDING! NYEHEHEHE";
+            this.ghostDialogue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ghostDialogue.Click += new System.EventHandler(this.demonDialogue_Click);
+            // 
             // Quest02Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Trace_Quest.Properties.Resources.Sandstone_Wall;
             this.ClientSize = new System.Drawing.Size(814, 701);
+            this.Controls.Add(this.ghostDialogue);
+            this.Controls.Add(this.ghostDialogueBox);
+            this.Controls.Add(this.ghost);
             this.Controls.Add(this.codeTracing02);
             this.Controls.Add(this.ct02AnswerButton);
             this.Controls.Add(this.codeTracing02TextBox);
@@ -108,6 +151,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textbox02Skin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ct02AnswerField)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.codeTracing02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ghostDialogueBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,5 +165,8 @@
         private System.Windows.Forms.PictureBox textbox02Skin;
         private System.Windows.Forms.PictureBox ct02AnswerField;
         private System.Windows.Forms.PictureBox codeTracing02;
+        private System.Windows.Forms.PictureBox ghost;
+        private System.Windows.Forms.PictureBox ghostDialogueBox;
+        private System.Windows.Forms.Label ghostDialogue;
     }
 }

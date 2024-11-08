@@ -70,6 +70,10 @@ namespace Trace_Quest {
             return ((v * w) / (x + y)) - z;
         }
 
+        private void demonDialogue_Click(object sender, EventArgs e) {
+
+        }
+
         // and yes I'm fully aware of the code snippet shown in the archaeology quest, its intentional
         // its to make things clearer to read, especially since the target audience are young programmers
     }
