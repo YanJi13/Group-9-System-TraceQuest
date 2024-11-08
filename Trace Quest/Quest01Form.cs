@@ -12,14 +12,12 @@ using System.Windows.Forms;
 namespace Trace_Quest {
     public partial class Quest01Form : Form {
 
-        private DBConnection dbConnection;
         private MainMenuGUI mainMenuGUI;
         private const int quest01Reward = 900; // this is the gold reward u get from quest 1
 
         public Quest01Form(MainMenuGUI mainMenu) {
 
             InitializeComponent();
-            dbConnection = new DBConnection();
             mainMenuGUI = mainMenu;
         }
 
@@ -53,8 +51,10 @@ namespace Trace_Quest {
 
                 MessageBox.Show("You have successfully banished the demon!");
                 codeTracing01TextBox.Clear();
-
-                using(SqlConnection conn = dbConnection.connection) {
+                
+                // NOTE: I'm pretty sure this is bad practice but it solved my problem
+                // I'll look into this in future personal projects
+                using (SqlConnection conn = new SqlConnection("Data Source=YANJI13;Initial Catalog=TraceQuestDB;Integrated Security=True;Encrypt=False")) {
 
                     conn.Open();
                     SqlCommand comm = new SqlCommand("insert into GoldCollectedTable (Gold_Collected) values (@quest01Reward)",conn);
